@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocksAreAmongUs", "SocksAreAmongUs\SocksAreAmongUs.csproj", "{2AF8530C-21D5-4AE2-A989-788AB2A766BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeIsNotAmongUs", "..\CodeIsNotAmongUs\CodeIsNotAmongUs\CodeIsNotAmongUs.csproj", "{3C796962-06B6-4082-B3DD-CE10C699DA58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocksAreAmongUs.Impostor", "SocksAreAmongUs.Impostor\SocksAreAmongUs.Impostor.csproj", "{EEB195E6-E443-4B5F-BC5E-D3C09C651F04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AF8530C-21D5-4AE2-A989-788AB2A766BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AF8530C-21D5-4AE2-A989-788AB2A766BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AF8530C-21D5-4AE2-A989-788AB2A766BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AF8530C-21D5-4AE2-A989-788AB2A766BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C796962-06B6-4082-B3DD-CE10C699DA58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C796962-06B6-4082-B3DD-CE10C699DA58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C796962-06B6-4082-B3DD-CE10C699DA58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C796962-06B6-4082-B3DD-CE10C699DA58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEB195E6-E443-4B5F-BC5E-D3C09C651F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEB195E6-E443-4B5F-BC5E-D3C09C651F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEB195E6-E443-4B5F-BC5E-D3C09C651F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEB195E6-E443-4B5F-BC5E-D3C09C651F04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

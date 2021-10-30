@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <Version>0.7.2</Version>
+        <LangVersion>latest</LangVersion>
+        <DebugType>embedded</DebugType>
+        <GameVersion>2021.4.14s</GameVersion>
+        <Mappings>NuclearPowered/Mappings:0.4.0</Mappings>
+        <AmongUs>/home/js6pak/Among Us/2021.4.14s/</AmongUs>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Include="Assets/**" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Deobfuscate Include="$(AmongUs)\BepInEx\plugins\Reactor-$(GameVersion).dll" />
+        <Deobfuscate Include="$(AmongUs)\BepInEx\plugins\CodeIsNotAmongUs-$(GameVersion).dll" />
+
+        <PackageReference Include="Reactor.OxygenFilter.MSBuild" Version="0.3.0" />
+    </ItemGroup>
+
+    <Target Name="Copy" AfterTargets="Reobfuscate">
+        <Copy SourceFiles="$(OutputPath)reobfuscated/$(AssemblyName)-$(GameVersion).dll" DestinationFolder="$(AmongUs)/BepInEx/plugins" Condition="'$(Configuration)' == 'Debug'" />
+    </Target>
+</Project>
